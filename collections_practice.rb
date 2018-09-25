@@ -18,11 +18,8 @@ end
 
 
 def swap_elements(array)
-  array.sort_by do |a|
-    a.split('').map do |b|
-    array.index(b)
-  end
-end
+  array[1], array[2] = array[2], array[1]
+  array
 end
 
 def reverse_array(array)
